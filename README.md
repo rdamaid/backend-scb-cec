@@ -30,6 +30,45 @@ Digitcard adalah sebuah aplikasi berbasis web yang dapat mengakses dan menampilk
 2. Menampilkan capaian siswa
 
 ## Konsep OOP yang Digunakan
+### Class
+Menggunakan konsep Class
+```
+class User extends Authenticatable
+{
+   // Isi class User
+}
+```
+
+### Inheritance
+Menurunkan class User dari class Authenticatable
+```
+class User extends Authenticatable
+{
+   // Isi class User
+}
+```
+
+### Enkapsulasi
+Meskipun memiliki method yang sama, CRUD pada setiap class akan menghasilkan fungsi yang berbeda
+```
+class ProdukController extends Controller
+{
+    public function index() {}
+
+    public function create() {}
+
+    public function store(Request $request) {}
+    
+    public function show(Produk $produk) {}
+    
+    public function edit(Produk $produk) {}
+    
+    public function update(Request $request, Produk $produk) {}
+    
+    public function destroy(Produk $produk) {}
+
+}
+```
 
 
 ## Tipe Desain Pengembangan yang Digunakan
