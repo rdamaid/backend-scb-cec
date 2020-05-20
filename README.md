@@ -72,7 +72,14 @@ class ProdukController extends Controller
 
 
 ## Tipe Desain Pengembangan yang Digunakan
+#### Anti-Pattern: Spaghetti Code
+Memecah file Controller menjadi beberapa file untuk menghindari spaghetti code
 
+#### Structural Design Pattern: Facade
+Menggunakan facade untuk memudahkan penggunaan kembali kode yang sering digunakan
+```
+use Illuminate\Support\Facades\Auth;
+```
 
 ## Developer
 | Nama                     | Job Description              |
